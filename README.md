@@ -40,3 +40,13 @@ function reverse(str) {
   return revString;
 }
 ```
+
+Solution using Advanced array function -- reduce()
+
+```javascript
+function reverse(str) {
+  return str.split('').reduce((reversed, character) => {
+    return character + reversed;
+  }, '');
+}
+```
