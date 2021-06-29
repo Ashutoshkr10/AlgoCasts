@@ -20,3 +20,23 @@ function reverse(str) {
   return revString;
 }
 ```
+
+Soulution using JS buitin functions
+
+```javascript
+function reverse(str) {
+  return str.split('').reverse().join('');
+}
+```
+
+Another solution
+
+```javascript
+function reverse(str) {
+  revString = '';
+  for (let character of str) {
+    revString = character + revString;
+  }
+  return revString;
+}
+```
